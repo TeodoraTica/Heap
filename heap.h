@@ -31,7 +31,7 @@ class Heap {
 private:
 
 	T *heap;
-    int capacity;
+    	int capacity;
 	int size;
 	Comp compare;
 
@@ -217,14 +217,6 @@ public:
         }
 
         return top;
-    }
-
-    void getHeap()
-    {
-        for(int i = 0; i<size ;i++)
-        {
-            cout<<heap[i]<<' ';
-        }
     }
 
 };
