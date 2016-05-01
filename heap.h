@@ -35,22 +35,22 @@ private:
     int size;
     Comp compare;
 
-    int getParent(int index)
+    int getParent(const int& index)
     {
         return (index-1)/2;
     }
 
-    int getLeftSon(int index)
+    int getLeftSon(const int& index)
     {
         return 2*index+1;
     }
 
-    int getRightSon(int index)
+    int getRightSon(const int& index)
     {
         return 2*index+2;
     }
 
-    void resize(int newCapacity)
+    void resize(const int& newCapacity)
     {
         T *newHeap = new T[newCapacity];
         int i;
@@ -155,7 +155,7 @@ public:
 		heap = new T[capacity];
 	}
 
-	Heap(int capacity)
+	Heap(const int& capacity)
 	{
 		size = 0;
 		this->capacity = capacity;
