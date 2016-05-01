@@ -6,8 +6,8 @@
 using namespace std;
 
 template <class T>
-class isLessThan
-{
+class isLessThan{
+	
 public:
 	bool operator () (const T& node1, const T& node2)
 	{
@@ -16,8 +16,8 @@ public:
 };
 
 template <class T>
-class isGreaterThan
-{
+class isGreaterThan{
+	
 public:
 	bool operator () (const T& node1, const T& node2)
 	{
@@ -30,12 +30,12 @@ class Heap {
 
 private:
 
-	T *heap;
-    	int capacity;
-	int size;
-	Comp compare;
+    T *heap;
+    int capacity;
+    int size;
+    Comp compare;
 
-	int getParent(int index)
+    int getParent(int index)
     {
         return (index-1)/2;
     }
